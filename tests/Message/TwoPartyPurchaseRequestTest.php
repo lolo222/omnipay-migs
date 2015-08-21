@@ -41,7 +41,7 @@ class TwoPartyPurchaseRequestTest extends TestCase
         $this->request->initialize(
             array(
                 'amount' => '12.00',
-                'transactionId' => 123,
+                'transactionId' => $invoice->invoice_number
                 'card' => $this->getValidCard(),
                 'merchantId'                   => '123',
                 'merchantAccessCode'           => '123',
